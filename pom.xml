@@ -5,7 +5,7 @@
   <artifactId>camel-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
-    <camel.version>3.5.0</camel.version>
+    <camel.version>2.23.2</camel.version>
     <spring.boot.version>2.3.12.RELEASE</spring.boot.version>
   </properties>
   <dependencyManagement>
@@ -18,9 +18,9 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>org.apache.camel.springboot</groupId>
-        <artifactId>camel-spring-boot-bom</artifactId>
-        <version>${camel.version}</version>
+        <groupId>org.apache.camel</groupId>
+        <artifactId>camel-spring-boot-dependencies</artifactId>
+        <version>2.23.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -28,15 +28,15 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>org.apache.camel.springboot</groupId>
+      <groupId>org.apache.camel</groupId>
       <artifactId>camel-jetty-starter</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.springboot</groupId>
+      <groupId>org.apache.camel</groupId>
       <artifactId>camel-spring-boot-starter</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel.springboot</groupId>
+      <groupId>org.apache.camel</groupId>
       <artifactId>camel-http-starter</artifactId>
     </dependency>
     <!-- dev tools -->
